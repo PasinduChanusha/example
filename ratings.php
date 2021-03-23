@@ -23,8 +23,8 @@
     $sql = $conn->query("SELECT SUM(rateIndex) AS total FROM stars");
     $rData = $sql->fetch_array();
     $total = $rData['total'];
-
     $avg = $total / $numR;
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -48,6 +48,7 @@
     </div>
 
     <script src="http://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    
     <script>
         var ratedIndex = -1, uID = 0;
 
